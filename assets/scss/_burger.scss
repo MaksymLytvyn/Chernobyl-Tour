@@ -1,0 +1,34 @@
+
+#hamburger{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+#hamburger{
+  display:none;
+@media screen and (max-width: 1000px){
+  transition: .3s;
+display:block;
+}
+  .mobile{
+    position: absolute;
+    right: 0;
+    top: 8vh;
+    background-color: turquoise;
+    height: 92vh;
+    width: 400px;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(100%);
+  }
+}
+@media only screen and (max-width: 760px){
+  .mobile {
+    width:100%;
+  }
+}
+.mobile.active {
+  transform: translate(0);
+}

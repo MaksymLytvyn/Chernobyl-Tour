@@ -49,15 +49,14 @@ Version: 1.0
 // Button 
 @import 'btn';
 
-// page-load-animation
-@import 'page-load-animation';
-
 /* ----------------------------------
     Template Section Styles
  ------------------------------------*/
 
 // Menu - Header Section 
 @import 'header';
+
+@import 'burger';
 
 // Banner 
 @import 'banner';
