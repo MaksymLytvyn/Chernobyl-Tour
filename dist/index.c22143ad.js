@@ -1,8 +1,14 @@
-const mobileNav = document.querySelector("#hamburger .mobile");
+const mobileNav = document.querySelector(".mobile-nav");
 const button = document.querySelector("#hamburger");
+const offoverlay = document.querySelector(".offcanvas-overlay");
+const closenav = document.querySelector(".fal.fa-times-circle");
 button.addEventListener("click", function() {
-    mobileNav.classList.toggle("active");
-    button.classList.toggle("active");
+    mobileNav.classList.add("show");
+    offoverlay.classList.add("overlay-open");
+});
+closenav.addEventListener("click", function() {
+    mobileNav.classList.remove("show");
+    offoverlay.classList.remove("overlay-open");
 });
 
 //# sourceMappingURL=index.c22143ad.js.map

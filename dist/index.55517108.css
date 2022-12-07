@@ -11663,14 +11663,14 @@ header.hover-color-green .main-header-wraper .header-right .header-search .searc
   transform: translate(100%);
 }
 
+.mobile .active {
+  transform: translate(0);
+}
+
 @media only screen and (max-width: 760px) {
   .mobile {
     width: 100%;
   }
-}
-
-.mobile.active {
-  transform: translate(0);
 }
 
 .banner {
