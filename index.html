@@ -9,7 +9,7 @@
     <title>Chernobyl tour</title>
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="assets/img/icons8-nuclear-50.png">
-    <link rel="stylesheet" href="assets/scss/style.scss">
+
     <link rel="stylesheet" href="assets/css/icons.css">
     <!--  magnific-popup css plugins -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!--  Bootstrap css plugins -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/scss/style.scss">
 </head>
 
 <!-- header end -->
@@ -108,7 +111,7 @@
                                 </form>
                             </div>
 
-                            <a class="header-btn">Get A Quote <i class="far fa-chevron-double-right"></i></a>
+                            <a href="#calculator" class="header-btn">Get A Quote <i class="far fa-chevron-double-right"></i></a>
                             <div class="mobile-nav-bar d-block ml-3 ml-sm-5 d-xl-none">
                                 <div class="mobile-nav-wrap">
                                     <nav>
@@ -485,6 +488,29 @@
 </section>
 </section>
 <!-- why-choose end -->
+
+<!-- calculator start -->
+<h1>Calculator</h1>
+<section id="calculator">
+    <div class="container-calculator">
+
+        <h2>How much will you pay in $? </h2>
+        <h3>Price includes dinner, transport and insurance.</h3>
+        <div style="margin-top: 10px;">
+            <span class="item-type item-type-active" data-id="item-1">1-Day</span>
+            <span class="item-type" data-id="item-2">2-Day</span>
+            <span class="item-type" data-id="item-3">3-Day</span>
+        </div>
+        <div style="margin-top: 50px;">
+            <input class="calc-range m-top-20" type="range" min="1" max="50" step="1" value="1" style="width: 50%">
+        </div>
+        Persons in the group:
+        <div class="calc-count">1</div>
+        Total price: <span class="calc-total-price"></span>
+        <br> Price per person: <span class="calc-price"></span>
+    </div>
+</section>
+<script type="text/javascript" src="assets/js/script.js"></script>
 
 <!-- our-portfolio-home start -->
 <section id="our-portfolio">
